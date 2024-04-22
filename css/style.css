@@ -1,9 +1,4 @@
-/*
-* Template Name: UntreeStore
-* Template Author: Untree.co
-* Author URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 body {
   overflow-x: hidden;
@@ -161,17 +156,18 @@ a.more {
   position: relative;
 }
 .hero .hero-img-wrap img {
-  position: relative;
-  top: 0px;
-  right: 0px;
   z-index: 2;
-  max-width: 600px;
-  left: -20px;
+  width: 400px;
 }
-@media (min-width: 768px) {
+
+@media (width: 768px) {
   .hero .hero-img-wrap img {
-    right: 0px;
-    left: -100px;
+    /* position: static !important; */
+  }
+  .hero .hero-img-wrap .hero-img {
+    width: 150px !important;
+    display: flex;
+    justify-content: center;
   }
 }
 @media (min-width: 992px) {
@@ -736,6 +732,21 @@ a.more {
   top: -200px;
   z-index: 1;
   right: 0;
+}
+@media (max-width: 958px) {
+  .footer-section .sofa-img .img-fluid {
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .footer-section .sofa-img {
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-section .sofa-img .img-fluid {
+    height: 250px;
+  }
 }
 .footer-section .sofa-img img {
   max-width: 380px;
